@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Tenis Kikes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ff6600;
+            margin-bottom: 10px;
+        }
+        
+        nav {
+            background-color: #333;
+            padding: 15px 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 20px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #ff6600;
+        }
+        
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1542291026-7eec264c27ff');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: center; 
+        }
+        
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .service-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-img {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .service-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .service-card:hover .service-img img {
+            transform: scale(1.1);
+        }
+        
+        .service-content {
+            padding: 20px;
+        }
+        
+        .service-content h3 {
+            color: #ff6600;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .service-content p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #ff6600;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #e65c00;
+        }
+        
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+        
+        .social-links {
+            margin: 20px 0;
+        }
+        
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: #ff6600;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 10px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">TENIS KIKES</div>
+        <p>Tu destino para los mejores tenis del mercado</p>
+    </header>
+    
+    <section class="hero">
+        <div>
+            <h1>Nuestros Servicios</h1>
+            <p>Ofrecemos más que solo tenis, ofrecemos experiencias</p>
+        </div>
+    </section>
+    
+    <div class="container">
+        <h2>¿Qué ofrecemos en Tenis Kikes?</h2>
+        <p>En Tenis Kikes nos enorgullece brindar un servicio excepcional que va más allá de la simple venta de calzado deportivo. Nuestro objetivo es satisfacer todas las necesidades de nuestros clientes amantes de los tenis.</p>
+        
+        <div class="services">
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d" alt="Venta de tenis">
+                </div>
+                <div class="service-content">
+                    <h3>Venta de Tenis Premium</h3>
+                    <p>Ofrecemos las mejores marcas y modelos de tenis para todas las disciplinas: running, baloncesto, fútbol, entrenamiento y moda urbana.</p>
+                    <a href="#" class="btn">Ver catálogo</a>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28" alt="Asesoramiento personalizado">
+                </div>
+                <div class="service-content">
+                    <h3>Mejores Marcas de Tenis</h3>
+                    <p>Nuestros expertos te ayudarán a encontrar el tenis perfecto según tu tipo de pie, disciplina deportiva y necesidades específicas.</p>
+                    <a href="#" class="btn">Agendar cita</a>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="Customización">
+                </div>
+                <div class="service-content">
+                    <h3>Customización de Tenis</h3>
+                    <p>¿Quieres tenis únicos? Ofrecemos servicio de personalización donde puedes elegir colores, materiales y agregar detalles personalizados.</p>
+                    <a href="#" class="btn">Personalizar ahora</a>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1545173168-9f1947eebb7f" alt="Reparación y mantenimiento">
+                </div>
+                <div class="service-content">
+                    <h3>Reparación y Mantenimiento</h3>
+                    <p>Extiende la vida de tus tenis favoritos con nuestro servicio profesional de limpieza, reparación y mantenimiento.</p>
+                    <a href="#" class="btn">Más información</a>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="Envíos a domicilio">
+                </div>
+                <div class="service-content">
+                    <h3>Envíos a Domicilio</h3>
+                    <p>Compra desde la comodidad de tu hogar con nuestro servicio de envío express y recibe tus tenis en perfectas condiciones.</p>
+                    <a href="#" class="btn">Ver zonas de envío</a>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a" alt="Eventos exclusivos">
+                </div>
+                <div class="service-content">
+                    <h3>Eventos Exclusivos</h3>
+                    <p>Acceso prioritario a lanzamientos, descuentos especiales para miembros y eventos con atletas profesionales.</p>
+                    <a href="#" class="btn">Unirse al club</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="logo">TENIS KIKES</div>
+        <p>La pasión por los tenis nos mueve</p>
+        
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook">f</i></a>
+            <a href="#"><i class="fab fa-instagram">i</i></a>
+            <a href="#"><i class="fab fa-twitter">t</i></a>
+            <a href="#"><i class="fab fa-tiktok">tk</i></a>
+        </div>
+        
+        <p>&copy; 2025 Tenis Kikes. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
