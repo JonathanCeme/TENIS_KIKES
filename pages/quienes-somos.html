@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tenis Kikes | Quiénes Somos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #e9f5f3;
+      color: #333;
+    }
+
+    nav {
+      background-color: #202d36;
+      color: white;
+      padding: 12px 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #00e39f;
+    }
+
+    header {
+      background: linear-gradient(rgba(32, 45, 54, 0.7), rgba(32, 45, 54, 0.7)),
+        url('https://thumbs.dreamstime.com/b/fondo-de-verano-minimalista-con-zapatos-zapatillas-deporte-cuero-para-mujer-blanco-sombra-hoja-tropical-sobre-vista-superior-la-212439045.jpg') no-repeat center center/cover;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+      color: #00e39f;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      text-shadow: 3px 3px 8px rgba(0,0,0,0.7);
+    }
+
+    main {
+      padding: 80px 20px 40px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    main h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #202d36;
+    }
+
+    main p {
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+
+    .team-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .team-member {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+    }
+
+    .team-member img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .team-member h3 {
+      font-size: 1.2rem;
+      color: #202d36;
+      margin-bottom: 5px;
+    }
+
+    .team-member p {
+      font-size: 0.95rem;
+      color: #777;
+    }
+
+    footer {
+      background-color: #202d36;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="/index.html">Inicio</a></li>
+      <li><a href="/pages/contactanos.html">Contáctanos</a></li>
+      <li><a href="/pages/personal.html">Personal</a></li>
+      <li><a href="/pages/servicios.html">Servicios</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Conócenos</h1>
+  </header>
+
+  <main>
+    <h2>Pasos firmes hacia el futuro</h2>
+    <p>Tenis Kikes es más que una tienda de calzado. Somos una comunidad apasionada por el deporte, la comodidad y el estilo. Desde nuestros inicios, nos hemos enfocado en crear productos que marquen la diferencia y acompañen a nuestros clientes en cada paso de su camino.</p>
+    <p>Creemos en la calidad, la innovación y la autenticidad. Cada par de tenis que vendemos está diseñado para destacar y rendir. Nuestro equipo trabaja incansablemente para ofrecerte lo mejor del mercado.</p>
+
+    <h2>Nuestro Equipo</h2>
+    <div class="team-section">
+      <div class="team-member">
+        <img src="https://img.freepik.com/vector-premium/retrato-anciano-barbudo-carismatico_684058-2567.jpg" alt="Miembro 1">
+        <h3>Kike Ramírez</h3>
+        <p>Fundador & Diseñador Principal</p>
+      </div>
+      <div class="team-member">
+        <img src="https://img.freepik.com/vector-premium/retrato-o-rostro-hombre-carismatico-mediana-edad_684058-2452.jpg" alt="Miembro 2">
+        <h3>Diego Torres</h3>
+        <p>Marketing & Relaciones Públicas</p>
+      </div>
+      <div class="team-member">
+        <img src="https://img.freepik.com/vector-premium/personaje-nino-sonriente-esta-disenado-utilizando-estilo-diseno-plano-simple_995281-509.jpg?w=360" alt="Miembro 3">
+        <h3>Leo Martínez</h3>
+        <p>Logística y Producción</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tenis Kikes. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
