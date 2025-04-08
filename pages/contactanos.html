@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contáctanos | TENIS KIKES</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+  <style>
+    body {
+      background: linear-gradient(to bottom, #f1f5f9, #e2e8f0);
+    }
+  </style>
+</head>
+<body class="text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <h1 class="text-3xl font-bold text-green-700">TENIS KIKES</h1>
+      <nav class="space-x-4 text-sm text-gray-600 font-medium">
+        <a href="/" class="hover:text-green-700">Inicio</a>
+        <a href="/productos.html" class="hover:text-green-700">Productos</a>
+        <a href="/contactanos.html" class="text-green-700 underline">Contáctanos</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <main class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-start">
+    
+    <!-- Información de contacto -->
+    <section>
+      <h2 class="text-3xl font-bold text-green-700 mb-4">¿Cómo podemos ayudarte?</h2>
+      <p class="text-gray-600 mb-6 text-lg">
+        Estamos para resolver tus dudas sobre productos, envíos o pedidos. ¡Contáctanos con confianza!
+      </p>
+
+      <ul class="space-y-4 text-gray-700">
+        <li><i class="fas fa-map-marker-alt text-green-600 mr-2"></i> Av. del Deporte #123, Ciudad Tenis, MX</li>
+        <li><i class="fas fa-phone-alt text-green-600 mr-2"></i> +52 55 1234 5678</li>
+        <li><i class="fas fa-envelope text-green-600 mr-2"></i> contacto@teniskikes.com</li>
+      </ul>
+
+      <!-- Redes -->
+      <div class="flex space-x-4 mt-6 text-xl text-green-600">
+        <a href="#"><i class="fab fa-facebook hover:text-green-800"></i></a>
+        <a href="#"><i class="fab fa-instagram hover:text-green-800"></i></a>
+        <a href="#"><i class="fab fa-whatsapp hover:text-green-800"></i></a>
+      </div>
+
+      <!-- Mapa -->
+      <div class="mt-10 rounded overflow-hidden shadow-lg">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.120254012747!2d-99.1332084850946!3d19.390679546628803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffbfa9aaae2f%3A0x7cfbc4976e71d355!2sZ%C3%B3calo%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1640999484074!5m2!1ses-419!2smx"
+          width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Formulario -->
+    <section class="bg-white shadow-lg rounded-xl p-8 transition-all duration-300 hover:shadow-2xl">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-6">Formulario de contacto</h2>
+
+      <form action="https://formsubmit.co/tuemail@ejemplo.com" method="POST" class="space-y-5">
+        <div>
+          <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" required
+                 class="mt-1 w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500"/>
+        </div>
+
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">Correo electrónico</label>
+          <input type="email" id="email" name="email" required
+                 class="mt-1 w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500"/>
+        </div>
+
+        <div>
+          <label for="telefono" class="block text-sm font-medium text-gray-700">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono"
+                 class="mt-1 w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500"/>
+        </div>
+
+        <div>
+          <label for="mensaje" class="block text-sm font-medium text-gray-700">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required
+                    class="mt-1 w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500"></textarea>
+        </div>
+
+        <div class="text-right">
+          <button type="submit"
+                  class="bg-green-600 text-white font-semibold px-6 py-2 rounded-lg hover:bg-green-700 transition">
+            Enviar mensaje
+          </button>
+        </div>
+
+        <!-- Configuración opcional -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white text-gray-500 text-sm text-center py-6 border-t mt-20">
+    © 2025 TENIS KIKES · Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
+
